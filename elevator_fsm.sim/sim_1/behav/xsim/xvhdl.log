@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/top_basys3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/TDM4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TDM4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab2/src/hdl/sevenSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice5/src/hdl/elevator_controller_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity elevator_controller_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/clock_divider_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_tb

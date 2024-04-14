@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../src/hdl/top_basys3.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../src/hdl/clock_divider.vhd" \
+"../../../../src/hdl/TDM4.vhd" \
+"../../../../../ece281-lab2/src/hdl/sevenSegDecoder.vhd" \
+"../../../../../ece281-ice5/src/hdl/elevator_controller_fsm.vhd" \
+"../../../../src/hdl/clock_divider_tb.vhd" \
+
+# Do not sort compile order
+nosort

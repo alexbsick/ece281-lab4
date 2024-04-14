@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr 14 13:05:51 2024
+# Process ID: 12804
+# Current directory: C:/Users/Alexander.Sick/Vivado/ece281-lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3260 C:\Users\Alexander.Sick\Vivado\ece281-lab4\elevator_fsm.xpr
+# Log file: C:/Users/Alexander.Sick/Vivado/ece281-lab4/vivado.log
+# Journal file: C:/Users/Alexander.Sick/Vivado/ece281-lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 794.918 ; gain = 81.629
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 820.461 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4DDEDA
+set_property PROGRAM.FILE {C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.runs/impl_1/top_basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.runs/impl_1/top_basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A4DDEDA
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_divider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj clock_divider_tb_vhdl.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/top_basys3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_basys3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/TDM4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TDM4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab2/src/hdl/sevenSegDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sevenSegDecoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-ice5/src/hdl/elevator_controller_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity elevator_controller_fsm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Alexander.Sick/Vivado/ece281-lab4/src/hdl/clock_divider_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_tb
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1517.344 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr 14 13:15:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.runs/synth_1/runme.log
+[Sun Apr 14 13:15:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.runs/impl_1/runme.log

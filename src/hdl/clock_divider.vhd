@@ -75,6 +75,8 @@ begin
 	-- Clock count and divide Process -------------------
 	--   increment and compare f_count to k_DIV
 	--   rollover and toggle f_clk when count reaches k_DIV
+	--   this is an asynchronous reset with the process relying on both i_reset and i_clk
+	--   take out i_reset and remove the if statement concerning i_reset to make it a synchronous reset
 	countClock_proc : process(i_clk, i_reset)
 	begin
 		if i_reset = '1' then

@@ -65,6 +65,7 @@
 --|    s_<signal name>          = state name
 --|
 --+----------------------------------------------------------------------------
+-- k_DIV = 50000000 = 2Hz
 library ieee;
   use ieee.std_logic_1164.all;
   use ieee.numeric_std.all;
@@ -92,21 +93,65 @@ end top_basys3;
 architecture top_basys3_arch of top_basys3 is 
   
 	-- declare components and signals
-
+component clock_divider is 
+    generic ( constant k_DIV : natural := 2);
+    port ( i_clk : in std_logic;
+           i_reset : in std_logic;
+           o_clk : out std_logic
+         );
+end component clock_divider;
   
+component elevator_controller_fsm is
+    Port ( i_clk     : in  STD_LOGIC;
+           i_reset   : in  STD_LOGIC;
+           i_stop    : in  STD_LOGIC;
+           i_up_down : in  STD_LOGIC;
+           o_floor   : out STD_LOGIC_VECTOR (3 downto 0)		   
+		 );
+end component elevator_controller_fsm;
+
+component sevenSegDecoder is
+    Port ( i_D : in STD_LOGIC_VECTOR (3 downto 0);
+           o_S : out STD_LOGIC_VECTOR (6 downto 0));
+end component sevenSegDecoder;
+
+signal w_clk : std_logic;
+signal w_floor : std_logic_vector(3 downto 0);
+
 begin
 	-- PORT MAPS ----------------------------------------
-
-	
+    clock_divider_inst : clock_divider
+            generic map ( k_DIV => 25000000 )
+            port map (
+                i_clk => clk,
+                i_reset => btnL or btnU,
+                o_clk => w_clk
+                );
+	elevator_controller_inst : elevator_controller_fsm
+	   port map (
+	       i_up_down => sw(1),
+	       i_stop => sw(0),
+	       i_reset => btnU or btnR,
+	       i_clk => w_clk,
+	       o_floor => w_floor
+	       );
+   sevenSegDecoder_inst : sevenSegDecoder
+      port map (
+           i_D => w_floor,
+           o_S => seg
+           );
 	
 	-- CONCURRENT STATEMENTS ----------------------------
 	
 	-- LED 15 gets the FSM slow clock signal. The rest are grounded.
-	
-
+	led(15) <= w_clk;
+    led(14 downto 0) <= "000000000000000";
 	-- leave unused switches UNCONNECTED. Ignore any warnings this causes.
 	
 	-- wire up active-low 7SD anodes (an) as required
+	an(2) <= '0';
 	-- Tie any unused anodes to power ('1') to keep them off
-	
+	an(3) <= '1';
+	an(1) <= '1';
+	an(0) <= '1';
 end top_basys3_arch;
