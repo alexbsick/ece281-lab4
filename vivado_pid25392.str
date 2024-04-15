@@ -1,0 +1,121 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 25392
+License: Customer
+
+Current time: 	Sun Apr 14 19:56:20 MDT 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 707 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	C26Alexander.Sick
+User home directory: C:/Users/Alexander.Sick
+User working directory: C:/Users/Alexander.Sick/Vivado/ece281-lab4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Alexander.Sick/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Alexander.Sick/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Alexander.Sick/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Alexander.Sick/Vivado/ece281-lab4/vivado.log
+Vivado journal file location: 	C:/Users/Alexander.Sick/Vivado/ece281-lab4/vivado.jou
+Engine tmp dir: 	C:/Users/Alexander.Sick/Vivado/ece281-lab4/.Xil/Vivado-25392-C26-5CG2151F2H
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 496 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Alexander.Sick\Vivado\ece281-lab4\elevator_fsm.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 56 MB (+56736kb) [00:00:09]
+// [Engine Memory]: 496 MB (+369015kb) [00:00:09]
+// Tcl Message: open_project C:/Users/Alexander.Sick/Vivado/ece281-lab4/elevator_fsm.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+3325kb) [00:00:11]
+// [Engine Memory]: 543 MB (+22392kb) [00:00:11]
+// [Engine Memory]: 594 MB (+24975kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 39 MB. Current time: 4/14/24 7:56:24 PM MDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 861.582 ; gain = 147.973 
+// Project name: elevator_fsm; location: C:/Users/Alexander.Sick/Vivado/ece281-lab4; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// [GUI Memory]: 66 MB (+267kb) [00:00:26]
+selectCodeEditor("top_basys3.vhd", 238, 196); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3.vhd", 335, 198); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 112, 214); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 112, 214, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3.vhd", 77, 231); // ce (w, ck)
+// [GUI Memory]: 73 MB (+4246kb) [00:00:59]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 81 MB (+4204kb) [00:01:24]
+// Elapsed time: 30 seconds
+selectCodeEditor("top_basys3.vhd", 270, 125); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3.vhd", 68, 144); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 30, 146); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3.vhd", 225, 147); // ce (w, ck)

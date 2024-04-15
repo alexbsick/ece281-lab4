@@ -134,6 +134,9 @@ signal w_floor_ones : std_logic_vector(3 downto 0);
 signal w_floor_tens : std_logic_vector(3 downto 0);
 signal w_tdm_clk : std_logic;
 signal w_data : std_logic_vector(3 downto 0);
+--Jake helped me make these signals
+signal w_fsm_reset : std_logic;
+signal w_clk_reset : std_logic;
 
 begin
 	-- PORT MAPS ----------------------------------------
@@ -141,7 +144,7 @@ begin
             generic map ( k_DIV => 25000000 )
             port map (
                 i_clk => clk,
-                i_reset => btnL or btnU,
+                i_reset => w_clk_reset,
                 o_clk => w_clk
                 );
     
@@ -157,7 +160,7 @@ begin
 	   port map (
 	       i_up_down => sw(1),
 	       i_stop => sw(0),
-	       i_reset => btnU or btnR,
+	       i_reset => w_fsm_reset,
 	       i_clk => w_clk,
 	       o_floor_ones => w_floor_ones,
 	       o_floor_tens => w_floor_tens
@@ -175,7 +178,8 @@ begin
         o_data => w_data
         );
 	-- CONCURRENT STATEMENTS ----------------------------
-	
+	w_clk_reset <= btnL or btnU;
+	w_fsm_reset <= btnR or btnU; 
 	-- LED 15 gets the FSM slow clock signal. The rest are grounded.
 	led(15) <= w_clk;
     led(14 downto 0) <= "000000000000000";
